@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android.support.design="http://schemas.android.com/tools"
+    android:background="@drawable/background2">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="25dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu"
+        android:theme="@style/Theme.MaterialComponents.NoActionBar"
+        />
+    <Button
+        android:id="@+id/ButtonWelcome"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_user"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center_vertical"
+        android:lineHeight="24sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16sp"
+        android:text="Hi, admin"
+        android:textColor="#4461F2"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutPredicClound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ButtonWelcome"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/ImgIconClound"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/cloud" />
+
+        <TextView
+            android:id="@+id/TextDescClound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:letterSpacing="0.02"
+            android:lineHeight="38sp"
+            android:text="Mostly sunny"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/LinearLayoutPredicClound"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/ButtonWelcome"
+        android:layout_marginBottom="15dp"
+        >
+
+        <TextView
+            android:id="@+id/TextWeekdays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:letterSpacing="0.03"
+            android:lineHeight="24sp"
+            android:text="Wednesday"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TextTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:letterSpacing="0.02"
+            android:lineHeight="40sp"
+            android:text="27 C"
+            android:textColor="@color/black"
+            android:textSize="55sp" />
+
+        <TextView
+            android:id="@+id/TextTemperatureDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:letterSpacing="0.03"
+            android:lineHeight="24sp"
+            android:text="01/01/2023"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayoutPredicClound"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:rowCount="2"
+        android:columnCount="1" >
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="190dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_marginEnd="170dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="Sunrise"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text=" 06:06"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sunrise"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="170dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="Sunset"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text=" 17:17"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sunset"
+                    android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="90dp">
+
+                <ImageView
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_rainfall"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="  Rainfall"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="100"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="   mm"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</RelativeLayout>
