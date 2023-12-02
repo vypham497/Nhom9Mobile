@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_toRightOf="@+id/LinearLayoutPredicClound"
-        android:layout_marginLeft="60dp"
+        android:layout_marginLeft="40dp"
         android:layout_below="@id/ButtonWelcome"
         android:layout_marginBottom="15dp"
         >
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsmedium"
             android:letterSpacing="0.03"
-            android:lineHeight="24sp"
+            android:lineHeight="20sp"
             android:text="Wednesday"
             android:textColor="@color/black"
             android:textSize="24sp" />
@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsmedium"
             android:letterSpacing="0.02"
-            android:lineHeight="40sp"
+            android:lineHeight="30sp"
             android:text="27 C"
             android:textColor="@color/black"
             android:textSize="55sp" />

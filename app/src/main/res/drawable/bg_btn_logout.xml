@@ -1,0 +1,15 @@
+<!-- res/drawable/bg_btn_logout.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp"/>
+            <gradient android:startColor="#E4466CB2" android:endColor="#4461F2" android:type="linear" android:angle="90"></gradient>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp"/>
+            <gradient android:startColor="#E4466CB2" android:endColor="#4461F2" android:type="linear" android:angle="90"></gradient>
+        </shape>
+    </item>
+</selector>
